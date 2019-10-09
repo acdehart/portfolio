@@ -6,8 +6,7 @@ html {
 }
 
 body {
-    margin: 40px;
-    margin: 0; margin-left: calc(100vw - 100%);
+    margin-left: calc(100vw - 100%);
     color: #444;
     font-family: Roboto, sans-serif;
     background-image: url("https://66.media.tumblr.com/4cfd50a9eb8a0dd08007e3646f86d4a8/tumblr_inline_py35c6jG5G1vn6qpn_500.jpg");
@@ -57,6 +56,10 @@ a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, bo
     /*font: inherit;
     vertical-align: baseline;*/
     text-decoration: none;
+}
+
+article {
+    text-align: justify;
 }
 
 em{
@@ -135,8 +138,8 @@ ul {
 
 .wrapper {
     display: grid;
-    grid-gap: 1em;
-    grid-template-columns: 1fr 10fr 1fr;
+    grid-gap: .5em;
+    grid-template-columns: .5fr 11fr .5fr;
     grid-template-areas:
     "header     header      header"
     ".          content     ."
@@ -150,9 +153,8 @@ ul {
     background: transparent;
     padding-bottom: 0px;
     padding-left:-100%;
-    padding-right: 25px;
+    padding-right: 0px;
 }
-
 
 
 .box {
@@ -172,6 +174,7 @@ ul {
 
 .sidebar {
     grid-template-columns: repeat(4, 10px [col-start] 250px [col-end]) 10px;
+    align-content: cover;
     background-color: transparent;
 }
 
@@ -197,15 +200,16 @@ ul {
 
 /***    Ghost Flair     ***/
 .ghostbox{
-    background-color: #ccc;
+    background-color: #cccccc;
     left: auto;
     right: -40px;
     top: -40px;
     bottom: auto;
+    padding: 1em 1em;
     content: '';
     display: block;
     text-align: left;
-    background-size: 110%;
+    
 }
 
 
@@ -223,8 +227,8 @@ ul {
     /*background-image: url("https://66.media.tumblr.com/80412c4da17e7dc06d82b422f2ced5d3/tumblr_inline_py0f4yMxjz1vn6qpn_500.png");
     */
     background-image: url("https://66.media.tumblr.com/8f353c7d7c1a4039baada5fa869aed95/tumblr_inline_pyf5akj2Xl1vn6qpn_500.jpg");
-    background-size: cover;
-    width: 106%;
+    background-size: 106%;
+    width: cover;
     background-position: bottom;
     color: #eee;
 }
@@ -235,14 +239,15 @@ ul {
     justify-content: center;
     align-items: center;
     position: relative;
-    margin-top: 70px;
-    height: 300px;
+    margin-top: 1em;
+    
 
     font-size: 2em;
-    width:103%;
+    background-size: 106%;
     margin-left: auto;
     text-align: center;
 }
+
 
 
 
@@ -271,11 +276,11 @@ ul {
     h2 {
         font-size: 2.6em;
         text-align: left;
-        text-shadow: -1px 1px 10px rgb(255, 255, 255);
+        text-shadow: -1px 1px .25em rgb(255, 255, 255);
     }
 
     article {    
-        text-shadow: -1px 1px 20px rgb(255, 255, 255);
+        text-shadow: -1px 1px .5em rgb(255, 255, 255);
     }
 
     .wrapper {
@@ -293,7 +298,7 @@ ul {
         margin: auto;
         background: transparent;
         padding-bottom: 0px;
-        padding-left:-100%;
+        padding-left: -100%;
         padding-right: 25px;
 
         /*
@@ -330,7 +335,7 @@ ul {
 }
 
 
-    
+
 /*Template Code*/
 .page-template-page-home__for-business .one-offs--grid, .page-template-page-home__for-home .one-offs--grid {
     float: right;
