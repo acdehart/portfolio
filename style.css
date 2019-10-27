@@ -1,5 +1,134 @@
-/* Take2.css */
-/***    TAGS    ***/
+html, body {
+    height: 100%;
+    margin: 0;
+  }
+
+.wrapper {
+    min-height: 100%;
+    display: grid;
+    grid-template-columns: 150px auto 150px;
+    grid-template-rows: 1fr auto;
+    grid-gap: 3em;
+    margin-top: -7%;
+    margin-bottom: -50px;
+  }
+  
+  #icon {
+    border-radius: 50%;
+    min-width: auto;
+    max-width: auto;
+    width: 12em;
+    height: auto;
+    float: center;
+}
+
+header, footer {
+    grid-column: 1 / 4;
+    align-content: center;
+    content: center;
+}
+  
+
+@media all and (max-width: 700px) {
+    aside,
+    article {
+      grid-column: 1 / 4;
+    }
+}
+  
+/* Demo Specific Styles */
+body {
+
+    margin: 0 auto;
+    max-width: 56em;
+    min-height: 100%;
+    padding: 0 0;
+    color: #444;
+    font-family: Roboto, sans-serif;
+    background-image: url("https://66.media.tumblr.com/4cfd50a9eb8a0dd08007e3646f86d4a8/tumblr_inline_py35c6jG5G1vn6qpn_500.jpg");
+    /*background-image: url('https://raw.githubusercontent.com/acdehart/portfolio/Images/background.jpg');
+    background-image: url('https://s3.amazonaws.com/codecademy-content/courses/learn-css-selectors-visual-rules/hypnotize_bg.png');
+    */
+}
+a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h3, h4, h5, h6, header, hgroup, html, i, iframe, ins, kbd, label, legend, li, main, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video {
+    /*margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;*/
+    text-decoration: none;
+}
+
+h1, h5,h6,h7,h8{
+    text-align: center;
+}
+
+header,
+aside,
+article {
+    text-shadow: 1px 1px 5px rgb(255, 255, 255);
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 35vh;
+    
+}
+
+.footer,
+.push {
+  height: 9.9em;
+}
+
+
+
+footer {
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:auto;
+
+}
+
+/*{
+    background: #000 !important;
+    color: #0f0 !important;
+    outline: solid #f00 1px !important;
+}
+
+* {
+    box-sizing: border-box;
+  }
+/*** SOCIALS ***/
+.icon-bar {
+    width: 100%;
+    background-color: #555;
+    overflow: auto;
+  }
+  
+  .icon-bar a {
+    float: left;
+    width: 20%;
+    text-align: center;
+    padding: 12px 0;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 36px;
+  }
+  
+  .icon-bar a:hover {
+    background-color: #000;
+  }
+  
+  .active {
+    /*background-color: #4CAF50;*/
+  }
+
+
+  /* Take2.css */
+/***    TAGS    ***
 html {
     width: 100vw;
 
@@ -12,7 +141,7 @@ body {
     background-image: url("https://66.media.tumblr.com/4cfd50a9eb8a0dd08007e3646f86d4a8/tumblr_inline_py35c6jG5G1vn6qpn_500.jpg");
     /*background-image: url('https://raw.githubusercontent.com/acdehart/portfolio/Images/background.jpg');
     background-image: url('https://s3.amazonaws.com/codecademy-content/courses/learn-css-selectors-visual-rules/hypnotize_bg.png');
-    */
+    *
 }
 
 figcaption{
@@ -22,27 +151,41 @@ figcaption{
 
 img {
     max-width: 100%;
-    min-width: 49.1%;/* 32.2% or 49.1% */
+    min-width: 49.1%;/* 32.2% or 49.1% *
     height: auto;
 }
 
 a {
-    color: rgb(133, 212, 144);
+    color: rgb(78, 78, 78);
     width: 40px;
 }
 
 .footnote {
-    text-shadow: 1px 1px 5px #444; 
+    box-shadow: .1em .1em 0px rgb(139, 25, 4);
+    background-color: rgb(133, 212, 144);
+    font-size: 2em;
+    align-self: center;
+    justify-self: center;
+    margin-bottom: 16px;
+    white-space: normal;
+    padding: 10px 20px;
+    display: block;
+    width: 100%;
+    position: relative;
+    border-radius: 100px;
+    border: 2px solid #fff;
+    background-color: #fff;
+
 }
 
 #icon {
     min-width: auto;
     max-width: auto;
-    width: 1em;
+    width: 3em;
     margin-top: 0.1em;
     height: auto;
-    float: right;
-    padding-right: 11%;
+    float: center;
+
 }
 
 ol, ul {
@@ -54,7 +197,7 @@ a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, bo
     border: 0;
     font-size: 100%;
     /*font: inherit;
-    vertical-align: baseline;*/
+    vertical-align: baseline;*
     text-decoration: none;
 }
 
@@ -87,10 +230,9 @@ h2 {
 h1{
     display: block;
     margin-block-start: 0.41em;
-    margin-block-end: 0.51em; /*.83em*/
+    margin-block-end: 0.51em; /*.83em*
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    font-size: 3.8em;
     padding-left: 2%;
     text-shadow: -1px 1px 10px #444;
 }
@@ -107,7 +249,7 @@ ul {
 }
 
 
-/***    CLASSES     ***/
+/***    CLASSES     ***
 .sidebar {
     grid-area: sidebar;
 }
@@ -118,6 +260,9 @@ ul {
 
 .content {
     grid-area: content;
+    text-align: center;
+    align-self: center;
+    justify-self: center;
 }
 
 .content2 {
@@ -136,31 +281,34 @@ ul {
     width:100%;
 }
 
-/* {
+.copyright {
+    
+    font-size: .1em;
+    font-family: Arial,
+         "Helvetica Neue",
+         Helvetica,
+         sans-serif;
+}
+
+* {
     background: #000 !important;
     color: #0f0 !important;
     outline: solid #f00 1px !important;
 }
-*/
 
 .wrapper {
     display: grid;
-    grid-gap: .5em;
-    grid-template-columns: .5fr 11fr .5fr;
+    grid-gap: 5em;
+    grid-column: full;
+    grid-template-columns: .25fr 11.5fr .25fr;
     grid-template-areas:
-    "header     header      header"
+    ".          header      ."
     ".          content     ."
-    ".          sidebar     ."
-    ".          content2    ."
-    ".          sidebar2    ."
-    "footer     footer      footer";
+    ".          footer      .";
     font-family: Roboto, sans-serif;
     max-width: 100%;
     margin: auto;
     background: transparent;
-    padding-bottom: 0px;
-    padding-left:-100%;
-    padding-right: 0px;
 
     width: 100%;
 
@@ -168,8 +316,8 @@ ul {
     padding-bottom: 0px;
     padding-left: 0px;
     padding-right: 0px;
-    overflow-x: hidden;
-    
+    overflow-x: visible;
+    position: relative;    
 }
 
 
@@ -184,7 +332,7 @@ ul {
 
 .content2 img, .content img{
     width: 100%;
-    box-shadow: .5em -.5em 0px rgb(133, 212, 144);
+
 }
 
 
@@ -214,7 +362,7 @@ ul {
     width: 135px;
 }
 
-/***    Ghost Flair     ***/
+/***    Ghost Flair     ***
 .ghostbox{
     background-color: #cccccc;
     left: auto;
@@ -240,25 +388,17 @@ ul {
 
 
 .header, .footer {
-    /*background-image: url("https://66.media.tumblr.com/80412c4da17e7dc06d82b422f2ced5d3/tumblr_inline_py0f4yMxjz1vn6qpn_500.png");
-    */
-    background-image: url("https://66.media.tumblr.com/8f353c7d7c1a4039baada5fa869aed95/tumblr_inline_pyf5akj2Xl1vn6qpn_500.jpg");
-    background-size: 100%;
-    width: cover;
-    background-position: bottom;
-    color: #eee;
 }
 
 .footer{
-    background-image: url("https://66.media.tumblr.com/80412c4da17e7dc06d82b422f2ced5d3/tumblr_inline_py0f4yMxjz1vn6qpn_500.png");
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: relative;
+    align-items: relative;
     position: relative;
     margin-top: 1em;
     
 
-    font-size: 2em;
+    font-size: .2em;
     background-size: 106%;
     margin-left: auto;
     text-align: center;
@@ -267,7 +407,7 @@ ul {
 
 
 
-@media only screen and (min-width: 750px){
+@media only screen and (min-width: 650px){
     .ghostbox{
         background-color: transparent;
     }
@@ -275,8 +415,8 @@ ul {
 
 
 
-        /***    Wide Screans Only   ***/
-@media only screen and (min-width: 750px){
+        /***    Wide Screans Only   ***
+@media only screen and (min-width: 650px){
     .page-template-page-home__for-business .one-offs--large-image h2:after, .page-template-page-home__for-home .one-offs--large-image h2:after {
         left: 0;
     }
@@ -288,7 +428,7 @@ ul {
 
 
 
-@media only screen and (min-width: 750px)   {/*600*/
+@media only screen and (min-width: 650px)   {/*600*
     h2 {
         font-size: 2.6em;
         text-align: left;
@@ -302,13 +442,7 @@ ul {
     .wrapper {
 
         display: grid;
-        grid-gap: 1em;
-        grid-template-columns: 1fr 5fr 5fr 1fr;
-        grid-template-areas:
-        "header     header      header      header"
-        ".          content     sidebar     ."
-        ".          sidebar2    content2    ."
-        "footer     footer      footer      footer";
+        grid-template-columns: 1fr 4fr 1fr;
         font-family: Roboto, sans-serif;
 
 
@@ -324,7 +458,7 @@ ul {
         margin-left: calc(50vw - 385px);
         /*margin-left: calc(100vw - 100%);
         width: 770px;
-        max-width: 1070px;*/
+        max-width: 1070px;*
         
     }
     .sidebar img, .sidebar2 img {
@@ -348,7 +482,7 @@ ul {
 
 
 
-/*Template Code*/
+/*Template Code*
 .page-template-page-home__for-business .one-offs--grid, .page-template-page-home__for-home .one-offs--grid {
     float: right;
     width: 100%;
@@ -356,3 +490,4 @@ ul {
     padding: 0;
     display: none;
 }
+*/
