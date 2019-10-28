@@ -18,15 +18,17 @@ html, body {
     border-radius: 50%;
     min-width: auto;
     max-width: auto;
-    width: 12em;
+    width: 60%;
     height: auto;
     float: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 header, footer {
     grid-column: 1 / 4;
-    align-content: center;
-    content: center;
+
 }
   
 
