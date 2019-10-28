@@ -16,11 +16,9 @@ html, body {
   
   #icon {
     border-radius: 50%;
-    min-width: auto;
-    max-width: auto;
     width: 60%;
     height: auto;
-    float: center;
+
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -74,10 +72,12 @@ h1,h2,h3,h4,h5,h6,h7,h8{
     color: rgb(206, 41, 41);
 }
 
+
+
 header,
 aside,
 article {
-    text-shadow: 1px 1px 5px rgb(255, 255, 255);
+    ;
     background: transparent;
     display: flex;
     align-items: center;
@@ -87,7 +87,7 @@ article {
 }
 
 article {
-
+    text-shadow: 1px 1px 3px rgb(17, 0, 0)
 }
 
 .footer,
@@ -95,6 +95,22 @@ article {
   height: 7em;
 }
 
+.ghostbox{
+    background-color: #eaeaea;
+    background-image: url(https://66.media.tumblr.com/72049f88efa8828e9006c51556f36334/tumblr_inline_q02eohrlxy1vn6qpn_500.jpg);
+    background-position-x: -150%;
+    background-position-y: 30%;
+    background-
+    text-align: center;
+    padding: 3em;
+    border-radius: 5%;
+    box-shadow: .1em .1em  rgb(206, 41, 41);
+
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 
 footer {
