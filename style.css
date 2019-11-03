@@ -2,9 +2,19 @@ html, body {
     height: 100%;
     margin: 0;
 
-  }
+}
+
+.wideboi {
+
+
+}
 
 .wrapper {
+    background-color: rgb(37, 37, 37);
+    background: none;
+
+    background-size: auto 100%;
+    background-position-x: center;
     min-height: 100%;
     display: grid;
     grid-template-columns: 150px auto 150px;
@@ -12,16 +22,17 @@ html, body {
     grid-gap: 3em;
     margin-top: -2%;
     margin-bottom: -50px;
+
 }
 
 #icon {
-border-radius: 50%;
-width: 50%;
-height: auto;
+    border-radius: 50%;
+    width: 50%;
+    height: auto;
 
-display: block;
-margin-left: auto;
-margin-right: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #patreon {
@@ -45,9 +56,12 @@ header, footer {
     }
     .wrapper{
         grid-template-columns: auto;
+        background: none;
 
     }
-
+    .ghostbox{
+        background-image: url(https://66.media.tumblr.com/d6f86df14e54a74eb5a23df76d335de7/tumblr_inline_q0bmm6vKCO1vn6qpn_500.jpg);
+    }
 }
   
 /* Demo Specific Styles */
@@ -59,7 +73,9 @@ body {
     padding: 0 0;
     color: #444;
     font-family: Roboto, sans-serif;
-    background-image: url("https://66.media.tumblr.com/4cfd50a9eb8a0dd08007e3646f86d4a8/tumblr_inline_py35c6jG5G1vn6qpn_500.jpg");
+    background: url("./Images/background.jpg");
+    background-position-x: center;
+    background-size: auto 80%;
     /*background-image: url('https://raw.githubusercontent.com/acdehart/portfolio/Images/background.jpg');
     background-image: url('https://s3.amazonaws.com/codecademy-content/courses/learn-css-selectors-visual-rules/hypnotize_bg.png');
     */
@@ -75,9 +91,14 @@ a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, bo
 
 }
 
-h1{
+h1 {
     text-align: center;
     color: rgb(206, 41, 41);
+    text-shadow: 0 0 8px #ffffff;
+}
+
+h2 {
+    font-weight: bold;
 }
 
 h2,h3,h4,h5,h6,h7,h8{
@@ -111,10 +132,11 @@ article {
 }
 
 .ghostbox{
+    background-image: url(https://66.media.tumblr.com/d6f86df14e54a74eb5a23df76d335de7/tumblr_inline_q0bmm6vKCO1vn6qpn_500.jpg);
     background-color: #eaeaea;
-    background-image: url(https://66.media.tumblr.com/72049f88efa8828e9006c51556f36334/tumblr_inline_q02eohrlxy1vn6qpn_500.jpg);
     background-repeat: no-repeat;
-    background-size: 100% auto;
+    background-size: 175% auto;
+    background-position: center;
     text-align: center;
     padding: 3em;
     box-shadow: .1em .1em 1px rgb(231, 44, 44);
@@ -124,6 +146,8 @@ article {
     margin-left: auto;
     margin-right: auto;
 }
+
+
 
 
 footer {
@@ -141,7 +165,7 @@ footer {
     color: #0f0 !important;
     outline: solid #f00 1px !important;
 }
-*/
+/**/
 * {
     box-sizing: border-box;
   }
