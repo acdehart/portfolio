@@ -6,14 +6,12 @@ html, body {
 
 .wideboi {
 
-
 }
 
 .wrapper {
     background-color: rgb(37, 37, 37);
     background: none;
 
-    background-size: auto 100%;
     background-position-x: center;
     min-height: 100%;
     display: grid;
@@ -22,7 +20,12 @@ html, body {
     grid-gap: 3em;
     margin-top: -2%;
     margin-bottom: -50px;
+}
 
+.midline{
+    background: #000 !important;
+    color: #0f0 !important;
+    outline: solid #f00 1px !important;
 }
 
 #icon {
@@ -57,6 +60,7 @@ header, footer {
     .wrapper{
         grid-template-columns: auto;
         background: none;
+        
 
     }
     .ghostbox{
@@ -182,7 +186,7 @@ footer {
     float: left;
     width: 20%;
     text-align: center;
-    padding: 12px 0;
+    padding: 13px 0; /*was 12px 0
     transition: all 0.3s ease;
     color: white;
     font-size: 36px;
