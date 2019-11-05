@@ -98,7 +98,8 @@ a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, bo
 h1 {
     text-align: center;
     color: rgb(206, 41, 41);
-    text-shadow: 0 0 8px #ffffff;
+    text-shadow: .1em .1em 0px #ff9a03;
+    font-family: verdana,arial,helvetica;
 }
 
 h2 {
